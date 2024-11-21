@@ -73,14 +73,7 @@ func (b *BiliBili) GetPlayUrl() any {
 	defer resp.Body.Close()
 	body, _ := io.ReadAll(resp.Body)
 	var json = string(body)
-    // 使用 gjson 获取指定路径的数据
-    realurl := gjson.Get(json, "data.durl.0.url").String()
-    
-    // 检查是否成功获取 realurl
-    if realurl == "" {
-        log.Println("Failed to get realurl from JSON")
-        return ""
-    }
-    
-    return realurl
+	value := gjson.Get(json, "data.durl.0.url").String()
+	realurl = fmt.Sprintf(value)
+	return realurl
 }
