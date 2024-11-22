@@ -61,7 +61,7 @@ func (b *BiliBili) GetPlayUrl() any {
 	params := map[string]string{
 		"cid":  roomid,
 		"qn":       b.Quality,
-		"platform": b.Platform,
+		"platform": "h5",
 	}
 	r, _ := http.NewRequest("GET", "https://api.live.bilibili.com/room/v1/Room/playUrl", nil)
 	q := r.URL.Query()
