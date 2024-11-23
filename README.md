@@ -4,7 +4,7 @@
 
 ### 方式一（推荐）
 
-点击下方按钮一键部署，还没注册的可以选择github登陆然后绑定手机即可
+点击下方按钮一键部署
 
 [![Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/001ProMax/IPTV)
 
