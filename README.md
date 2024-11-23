@@ -8,42 +8,6 @@
 
 [![Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/001ProMax/IPTV)
 
-新版vercel新建项目默认是node20.x的环境会提示部署失败，虽然加了`package.json`指定为18.x但是貌似没用，如果遇到部署失败的先去设置修改node为18.x
-![Vercel设置Nodejs环境](.github/asserts/nodejs.png)
-
-### ~~方式二~~
-
-<details>
-<summary>没必要fork了，一键部署更方便</summary>
-1. Fork项目到自己的仓库
-2. 在Vercel创建Project并选择`iptv-go`
-3. Build&Deploy
-4. Enjoy~
-</details>
-
-## ~~访问路径~~
-
-<details>
-<summary>现在访问路径不需要加多一层了，和肥羊仓库的方式一致，如果是以前部署的，也不需要改，也是正常用的</summary>
-
-### 直播
-
-`https://<你的域名>/live/平台/id`
-
-> 注意路径多了一层`live`
-
-### 电视直播
-
-设置`Vercel`的环境变量`TV`为`false`可以禁用电视直播，默认是启用的
-
-### 一起看
-
-`https://<你的域名>/yqk/xxx.m3u`
-
-> 注意路径多了一层`yqk`
-
-</details>
-
 ## 二、高级设置
 
  1. Vercel的Function Region设置为香港服务器看直播可以延迟会低一点
