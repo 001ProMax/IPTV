@@ -1,4 +1,6 @@
 #EXTM3U
+#EXT-X-APP BiliBili_HD
+
 #EXTINF:-1 二老师原创
 https://iptv-go-001promaxs-projects.vercel.app/bilibili/6103516
 #EXTINF:-1 鲁大能
